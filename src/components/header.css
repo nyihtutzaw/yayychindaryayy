@@ -1,0 +1,28 @@
+header {
+  height: 80px;
+  background: black;
+  
+  padding-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  color: rgb(240, 227, 227);
+  text-decoration: none;
+  font-size: 35px;
+}
+
+header .github-link {
+    background: white;
+    margin-right: 5%;
+    padding:5px 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 a {
+    font-size: 25px;
+  }
+}
