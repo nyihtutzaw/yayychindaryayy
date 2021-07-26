@@ -1,7 +1,7 @@
 header {
   height: 80px;
-  background: black;
-  
+  background: rgb(47 45 45);
+
   padding-left: 10%;
   display: flex;
   justify-content: space-between;
@@ -15,14 +15,14 @@ header h1 a {
 }
 
 header .github-link {
-    background: white;
-    margin-right: 5%;
-    padding:5px 20px;
-    cursor: pointer;
+  background: white;
+  margin-right: 5%;
+  padding: 5px 20px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
   header h1 a {
-    font-size: 25px;
+    font-size: 20px;
   }
 }

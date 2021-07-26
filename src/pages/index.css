@@ -1,29 +1,36 @@
 body {
-    background:rgb(245, 245, 245);
+  background: rgb(32, 28, 28);
 }
+
 .posts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 80px;
-  margin: 30px 20px;
+  display: flex;
+  margin: 20px 10%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
 .posts h3 {
   text-align: center;
   margin: 20px auto 0px;
   font-weight: 500;
-  color: black;
+  color: wh;
 }
 
 .posts div {
-    
-    padding:5px;
-    background:white;
-    box-shadow: 1px 1px 3px black;
+  padding: 5px;
+  background: white;
+  box-shadow: 1px 1px 3px black;
+  width: 23%;
+  margin-right: 0.6%;
+  margin-left: 0.6%;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .posts .gatsby-image-wrapper {
-    width:300px;
-    height: 300px;
+  width: 95%;
+  height: 300px;
 }
 
 .posts p {
@@ -33,20 +40,29 @@ body {
   text-decoration: none !important;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1650px) {
   .posts {
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 5%;
+  }
+  .posts div {
+    width: 31%;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .posts {
-    grid-template-columns: 1fr 1fr;
+    margin: 20px 3%;
+  }
+  .posts div {
+    width: 47.5%;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .posts {
-    grid-template-columns: 1fr;
+    margin: 20px 3%;
+  }
+  .posts div {
+    width: 99.5%;
   }
 }

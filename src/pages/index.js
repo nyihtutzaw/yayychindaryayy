@@ -7,27 +7,27 @@ import "./index.css"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-  query PostsPage {
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
-    ) {
-      nodes {
-        frontmatter {
-          slug
-          stack
-          title
-          thumb {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+    query PostsPage {
+      posts: allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date }
+      ) {
+        nodes {
+          frontmatter {
+            slug
+            stack
+            title
+            thumb {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
+          id
         }
-        id
       }
     }
-  }
   `)
 
   const posts = data.posts.nodes
@@ -45,6 +45,7 @@ const IndexPage = () => {
             <p>{post.frontmatter.stack}</p>
           </div>
         ))}
+        
       </div>
     </Layout>
   )

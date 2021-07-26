@@ -11,15 +11,18 @@ const ProjectDetails = ({ data }) => {
   return (
     <Layout>
       <div className="details">
-        <h2>{title}</h2>
-        <h3>{stack}</h3>
         <div className="styles.featured">
           <Img fluid={featuredImg.childImageSharp.fluid} />
         </div>
+        <div className="body-content">
+        <h2>{title}</h2>
+        <h3  className="stack">{stack}</h3>
+
         <div
-          className="styles.html"
+          className="html-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        </div>
       </div>
     </Layout>
   )
