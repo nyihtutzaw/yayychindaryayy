@@ -17,7 +17,6 @@ const ProjectDetails = ({ data }) => {
         <div className="body-content">
         <h2>{title}</h2>
         <h3  className="stack">{stack}</h3>
-
         <div
           className="html-content"
           dangerouslySetInnerHTML={{ __html: html }}
