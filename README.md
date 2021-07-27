@@ -1,5 +1,5 @@
 ### Yayy Chin Dar Yayy Blog
-### Gatsby Tutorail Project
+#### Gatsby Tutorial Project
 <br><br>
 #### Setup Guild
 * Clone the Report
